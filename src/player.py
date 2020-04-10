@@ -14,12 +14,14 @@ class Player:
         if len(self.current_room.has_items) < 1:
             return (f' \n You are currently at the {self.current_room.name} \
                     \n {self.current_room.description} \
-                    \n You see no items in the room. ')
+                    \n You see no items in the room. \
+                    \n')
         else:
             return (f' \n You are currently at the {self.current_room.name} \
                     \n {self.current_room.description}\
                     \n You see the following items: \
-                    \n {room_items}')
+                    \n {room_items} \
+                    \n')
 
     def item__str__(self):
             return (f'\n **{self.current_room.has_items.description}**')

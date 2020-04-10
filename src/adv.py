@@ -92,7 +92,7 @@ room['overlook'].has_items.append(arrow)
 room['narrow'].has_items.append(potion)
 
 """TREASURE ROOM ITEMS """
-room['treasure'].has_items.append(potion)
+
 
 """DARK ROOM """
 

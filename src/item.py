@@ -4,6 +4,8 @@ class Item:
         self.description = description
 
 class Light(Item):
-    self.
+    def __init__(self):
+        self.light = True
+
 
     
