@@ -3,4 +3,7 @@ class Item:
         self.name = name
         self.description = description
 
+class Light(Item):
+    self.
+
     

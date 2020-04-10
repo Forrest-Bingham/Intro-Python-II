@@ -31,11 +31,19 @@ class Player:
         return '*****************'
             
     def move(self, direction):
-        new_room = getattr(self.current_room, f'{direction}_to')
-        if new_room == None:
-            print('You cannot go that way. Please choose another direction')
-        elif new_room is not None:
-            self.current_room = new_room
+
+        if self.current_room.light_required == False or self.light == True:
+            new_room = getattr(self.current_room, f'{direction}_to')
+            if new_room == None:
+                print('You cannot go that way. Please choose another direction')
+            elif new_room is not None:
+                self.current_room = new_room
+        
+        else:
+            print('As you continue down this hallway without a light, everything around you turns pitch black. You are unable to navigate your way through the cave.')
+            print('Press Q to restart')
+            
+            
             
             
 

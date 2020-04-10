@@ -10,6 +10,7 @@ class Room:
         self.e_to = None
         self.w_to = None
         self.has_items = []
+        self.light_required = light_required
         # self.has_items = [] if has_items is None else has_items
 
     def show_items(self):
