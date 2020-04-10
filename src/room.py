@@ -2,16 +2,17 @@
 # description attributes.
 
 class Room:
-    def __init__(self, name, description):
+    def __init__(self, name, description, light_required=False): #, has_items=None
         self.name = name
         self.description = description
         self.n_to = None
         self.s_to = None
         self.e_to = None
         self.w_to = None
+        self.has_items = []
+        # self.has_items = [] if has_items is None else has_items
 
-    def room_info(self):
-        print('You are currently in the room: ' + self.name)
-        print(self.description)
-
+    def show_items(self):
+        y = [x.name for x in self.has_items] 
+        return(y)
     
